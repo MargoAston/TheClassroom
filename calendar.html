@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calendar</title>
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Raleway, Arial, Helvetica, sans-serif}
+
+.logo_classroom {
+    padding-left: 30px;
+}
+.logo_classroom:hover {
+    opacity: .8;
+    transform: scale(1.1);
+}
+button {
+    margin-left: 60px; 
+    transform: scale(1.1);  
+}
+button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #e67084;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #90bc44;
+  color: white !important
+}
+
+.days li .active_holiday {
+  padding: 5px;
+  background: #666;
+  color: white !important
+}
+.activity {
+    width: 600px;
+    background:#90bc44;
+    color: white;
+}
+.holiday {
+    width: 600px;
+    background:#666;
+    color: white;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+
+</head>
+<body>
+    <a id="logo_link" href="mrs-astons-classroom.html">
+        <img class="logo_classroom" alt="Classroom Logo" src="images/rsz_logo.png">
+    </a>
+    <p></p>
+    <button onclick="history.back()">Go Back</button>
+
+
+<div class="month">      
+  <ul>
+    <li>
+      October<br>
+      <span style="font-size:20px">2022</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Su</li>
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+</ul>
+
+<ul class="days">
+  <li> </li>
+  <li> </li>
+  <li> </li>
+  <li> </li>
+  <li> </li>
+  <li> </li>
+  <li>1</li>
+  <li>2</li>
+  <li>5</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+  <li>11</li>
+  <li><span class="active_holiday">12</span</li>
+  <li><span class="active_holiday">13</span</li>
+  <li><span class="active_holiday">14</span</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li><span class="active">21</span></li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li><span class="active">27</span></li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li><span class="active">31</span></li>
+</ul>
+
+<section class="holiday">
+    <h4>Oct 12th-15th - Early Dismissal 11:30 - Parent & Teacher Conferences</h4>
+</section>
+<section class="activity">
+  <h4>October 21st - Friday Family Home-School Activity - Fleet Science Center</h4> 
+</section>
+<section class="activity">
+  <h4>October 27th - Family Dance</h4>
+</section>
+<section class="activity">
+  <h4>October 31st Family STEM Project Due</h4> 
+</section>
+
+</body>
+</html>
